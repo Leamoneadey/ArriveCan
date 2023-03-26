@@ -5,21 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#103C51"
-    tools:context=".MainActivity">
+    tools:context=".CreateAccount">
 
     <TextView
-        android:id="@+id/loginTv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/CreateAccountTv"
+        android:layout_width="296dp"
+        android:layout_height="85dp"
+        android:layout_centerInParent="true"
         android:layout_gravity="center_horizontal"
-        android:text="Sign in to ArriveCan"
+        android:text="What's your email address?"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.218" />
+        app:layout_constraintVertical_bias="0.229" />
 
     <TextView
         android:id="@+id/EmailTv"
@@ -29,9 +32,9 @@
         android:text="Email Address"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.193"
+        app:layout_constraintHorizontal_bias="0.196"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginTv" />
+        app:layout_constraintTop_toBottomOf="@+id/CreateAccountTv" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
@@ -55,7 +58,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.18"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginTv" />
+        app:layout_constraintTop_toBottomOf="@+id/CreateAccountTv" />
 
     <EditText
         android:id="@+id/editTextNumberPassword"
@@ -83,48 +86,36 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginTv" />
+        app:layout_constraintTop_toBottomOf="@+id/CreateAccountTv" />
 
     <TextView
-        android:id="@+id/ForgotPass"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="23dp"
-        android:text="Forgot Password?"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        tools:layout_editor_absoluteX="149dp" />
-
-    <TextView
-        android:id="@+id/noAccount"
+        android:id="@+id/haveAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="86dp"
+        android:layout_marginStart="110dp"
         android:layout_marginBottom="16dp"
-        android:text="Don't have an account?"
+        android:text="Already have an account?"
         android:textAlignment="center"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ForgotPass"
+        app:layout_constraintTop_toBottomOf="@+id/button"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/CreateAccount"
+        android:id="@+id/SignIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="85dp"
+        android:layout_marginEnd="92dp"
         android:layout_marginBottom="16dp"
-        android:text="Create account"
+        android:text="Sign in"
         android:textAlignment="center"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/noAccount"
-        app:layout_constraintTop_toBottomOf="@+id/ForgotPass"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/haveAccount"
+        app:layout_constraintTop_toBottomOf="@+id/button"
         app:layout_constraintVertical_bias="1.0" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
