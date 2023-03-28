@@ -12,6 +12,13 @@
         android:theme="@style/Theme.ArriveCan"
         tools:targetApi="31">
         <activity
+            android:name=".GetStarted"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".CovidTest_Arrival"
             android:exported="false">
             <meta-data
@@ -27,13 +34,6 @@
         </activity>
         <activity
             android:name=".TransportActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".StartPage"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
