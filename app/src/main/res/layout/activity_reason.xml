@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context=".Reason">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header Image -->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/header_image"
+            android:scaleType="centerCrop"/>
+
+        <!-- Title -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_reason_for_travel"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="24dp"/>
+
+        <!-- Reason List -->
+
+        <RadioGroup
+            android:id="@+id/reason_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <RadioButton
+                android:id="@+id/option_canadian_citizen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/option_canadian_citizen"/>
+
+            <RadioButton
+                android:id="@+id/option_essential_reasons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/option_essential_reasons"/>
+
+            <RadioButton
+                android:id="@+id/option_discretionary_travel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/option_discretionary_travel"/>
+
+            <RadioButton
+                android:id="@+id/option_international_students"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/option_international_students"/>
+
+            <RadioButton
+                android:id="@+id/option_compassionate_entry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/option_compassionate_entry"/>
+
+            <RadioButton
+                android:id="@+id/option_family_reunification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/option_family_reunification"/>
+
+            <RadioButton
+                android:id="@+id/option_other_reasons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/option_other_reasons"/>
+
+        </RadioGroup>
+
+        <!-- Continue Button -->
+
+        <Button
+            android:id="@+id/continue_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/continue_button_text"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="32dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
