@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Flight Into Canada"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#103C51"/>
+
+        <!-- Description -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the details of your planned arrival to Canada within the next 72 hours (3 days). If your trip is not within the next 72 hours, come back and complete your submission later."
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="#5c5b58"/>
+
+        <!-- Airline and Flight Number -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Airline and Flight Number"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_airline_flight_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:background="@drawable/edit_text_bg"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <!-- Departure Date and Time -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Departure Date and Time"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_departure_date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="datetime"
+            android:background="@drawable/edit_text_bg"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <!-- Departure Airport -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Departure Airport"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_departure_airport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:background="@drawable/edit_text_bg"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <!-- Arrival Date and Time -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Arrival Date and Time"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_arrival_date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="datetime"
+            android:background="@drawable/edit_text_bg"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <!-- Arrival Airport -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Arrival Airport"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_arrival_airport"
+            android:layout_width="match

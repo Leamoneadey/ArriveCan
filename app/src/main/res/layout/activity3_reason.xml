@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="What best describe you or your primary reason for entering Canada?"
-            android:textColor="@color/black"
+            android:textColor="#103C51"
             android:textStyle="bold"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
 
@@ -60,7 +60,7 @@
                 android:id="@+id/option_discretionary_travel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Discretionary travel"/>
+                android:text="Discretionary travel (for tourism, leisure, and recreation)"/>
 
             <RadioButton
                 android:id="@+id/option_international_students"
@@ -72,21 +72,30 @@
                 android:id="@+id/option_compassionate_entry"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Compassionate entry"/>
+                android:text="Compassionate entry (e.g. taking care of a sick family member, providing end-of-life support, or attending a funeral)."
+                />
 
             <RadioButton
                 android:id="@+id/option_family_reunification"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Family reunification"/>
+                android:text="Family reunification (to reunite with an immediate or extended family member)."/>
 
             <RadioButton
                 android:id="@+id/option_other_reasons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Other reasons"/>
+                android:text="Other reasons not described in the above options."
+                />
 
         </RadioGroup>
+
+        <!-- Empty space -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="75dp"/>
 
         <!-- Continue Button -->
 
