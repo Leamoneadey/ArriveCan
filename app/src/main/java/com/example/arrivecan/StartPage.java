@@ -14,6 +14,6 @@ public class StartPage extends AppCompatActivity {
     }
 
     public <View> void clickEnter(View view){
-        startActivity(new Intent(getApplicationContext(), TransportActivity.class));
+        startActivity(new Intent(getApplicationContext(), Reason.class));
     }
 }

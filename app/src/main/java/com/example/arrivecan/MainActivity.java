@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity1_main);
     }
 
-    public <View> void clickEntrer(View view){
+    public <View> void clickEnter(View view){
         startActivity(new Intent(getApplicationContext(), StartPage.class));
     }
 }
