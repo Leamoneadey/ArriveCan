@@ -9,6 +9,6 @@ public class CovidTest_Arrival extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_covid_test_arrival);
+        setContentView(R.layout.activity5_covid_test_arrival);
     }
 }

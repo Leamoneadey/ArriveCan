@@ -19,7 +19,7 @@ public class TransportActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_transport);
+        setContentView(R.layout.activity4_transport);
 
         transportTextView = findViewById(R.id.transport);
         selectEntryModeTextView = findViewById(R.id.select_entry_mode_textview);
