@@ -88,7 +88,7 @@
 
         </RadioGroup>
 
-        <!-- Continue Button -->
+        <!-- Next Button -->
 
         <Button
             android:id="@+id/continue_button"
