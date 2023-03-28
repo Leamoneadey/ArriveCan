@@ -19,6 +19,13 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".Arrival_Flight"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".CovidTest_Arrival"
             android:exported="false">
             <meta-data

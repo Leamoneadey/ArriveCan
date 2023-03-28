@@ -11,7 +11,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="400dp"
         android:orientation="vertical"
         android:padding="16dp">
 
@@ -21,17 +21,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Air travellers, please note the following:"
-            android:textColor="@color/black"
+            android:textColor="#103C51"
             android:textStyle="bold"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
-
+            android:textSize="28sp"
+            android:paddingBottom="5dp"/>
         <!-- Note -->
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="On arrival to Canada, you may be required to take a COVID-19 test. You are asked to register in advance for your COVID-19 test. Preregistration will speed up your testing experience."
-            android:textColor="#808080"
+            android:textColor="#5c5b58"
             android:paddingTop="10dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
 
@@ -39,10 +39,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Travellers selected for testing must complete their arrival test as soon as possible. Follow any other instructions provided. More information on arrival testing is available at COVID-19: Travel, testing and borders."
-            android:textColor="#808080"
+            android:textColor="#5c5b58"
             android:paddingTop="10dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
 
+        <!-- Empty space -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="300dp"/>
         <!-- Next Button -->
 
         <Button
