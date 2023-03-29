@@ -127,5 +127,13 @@
         app:layout_constraintTop_toBottomOf="@+id/ForgotPass"
         app:layout_constraintVertical_bias="1.0" />
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="258dp"
+        android:layout_height="38dp"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="646dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
