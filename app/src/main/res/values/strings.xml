@@ -23,7 +23,7 @@
     <string name="select_from_one_the_following">Select from one the following:</string>
     <string name="entry_by_air">Entry By Air</string>
     <string name="entry_by_land">Entry By Land</string>
-    <string name="entry_by_marine">Entry By Marine</string>
+    <string name="entry_by_marine">Entry par voie marine</string>
     <string name="air_travellers_please_note_the_following">Air travellers, please note the following:</string>
     <string name="on_arrival_to_canada_you_may_be_required_to_take_a_covid_19_test_you_are_asked_to_register_in_advance_for_your_covid_19_test_preregistration_will_speed_up_your_testing_experience">On arrival to Canada, you may be required to take a COVID-19 test. You are asked to register in advance for your COVID-19 test. Preregistration will speed up your testing experience.</string>
     <string name="travellers_selected_for_testing_must_complete_their_arrival_test_as_soon_as_possible_follow_any_other_instructions_provided_more_information_on_arrival_testing_is_available_at_covid_19_travel_testing_and_borders">Travellers selected for testing must complete their arrival test as soon as possible. Follow any other instructions provided. More information on arrival testing is available at COVID-19: Travel, testing and borders.</string>
@@ -34,7 +34,7 @@
     <string name="see_the_list_of_airports">See the list of airports</string>
     <string name="indicates_a_required_field">indicates a required field</string>
     <string name="country_of_original_departure">Country of original departure</string>
-    <string name="this_is_the_last_country_you_stayed_inor_visited_prior_to_your_flight_to_canada">This is the last country you stayed inor visited prior to your flight to Canada</string>
+    <string name="this_is_the_last_country_you_stayed_inor_visited_prior_to_your_flight_to_canada">This is the last country you stayed in or visited prior to your flight to Canada</string>
     <string name="arrival_airport">Arrival airport</string>
     <string name="airline">Airline</string>
     <string name="flight_number">Flight number</string>
