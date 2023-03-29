@@ -15,7 +15,7 @@
     <string name="select_from_one_the_following">Choisissez parmis les suivantes:</string>
     <string name="entry_by_air">Entrer par voie aérienne</string>
     <string name="entry_by_land">Entrer par voie terrestre</string>
-    <string name="entry_by_marine">Entry By Marine</string>
+    <string name="entry_by_marine">Entrer par voie marine</string>
     <string name="indicates_a_required_field">"indiquer un champs requis "</string>
     <string name="date_of_arrival">Date d\'arrivée</string>
     <string name="if_you_include_other_workers_in_your_declaration_they_must_have_the_same_reason_for_entry">Si vous ajoutez d\'autres travailleurs à votre déclaration, ils doivent avoir la même raison d\'entrer que vous</string>
@@ -23,16 +23,13 @@
     <string name="discretionary_travel_for_tourism_leisure_and_recreation">Voyage récréatif (tourisme, loisir)</string>
     <string name="international_student_with_a_valid_visa">Étudiant international possédant un visa valid</string>
     <string name="compassionate_entry_e_g_taking_care_of_a_sick_family_member_providing_end_of_life_support_or_attending_a_funeral">"Entrer pour des raisons de compassion (prendre soins d'un membre de la famille malade, supporter une personne en phase terminal ou assister à des funérailles) "</string>
-    <string name="compassionate_entry_e_g_taking_care_of_a_sick_family_member_providing_end_of_life_support_or_attending_a_funeral">E</string>
-    <string name="family_reunification_to_reunite_with_an_immediate_or_extended_family_member">Réunificaton de famille (se réunir avec un membre de la famille immédiate ou étendu)</string>
-    <string name="family_reunification_to_reunite_with_an_immediate_or_extended_family_member">R</string>
+    <string name="family_reunification_to_reunite_with_an_immediate_or_extended_family_member">Réunificaton de famille (se réunir avec un membre de la famille immédiate ou étendue)</string>
     <string name="other_reasons_not_described_in_the_above_options">Autres raisons non-énumérés plus haut.</string>
     <string name="next">Suivant</string>
     <string name="how_are_you_entering_into_canada">Comment entrez-vous au Canada?</string>
     <string name="air_travellers_please_note_the_following">Voyageurs aériens, notez ceci:</string>
     <string name="on_arrival_to_canada_you_may_be_required_to_take_a_covid_19_test_you_are_asked_to_register_in_advance_for_your_covid_19_test_preregistration_will_speed_up_your_testing_experience">À votre arrivé au Canada, vous pourriez être requis de faire un test  COVID-19 Vous devez vous enregistrer en avance pour  le test COVID. Ce processu permettra d\'accélérer votre expérience.</string>
     <string name="travellers_selected_for_testing_must_complete_their_arrival_test_as_soon_as_possible_follow_any_other_instructions_provided_more_information_on_arrival_testing_is_available_at_covid_19_travel_testing_and_borders">Les voyageurs sélectionnés pour se faire tester doivent compléter le test d\'arrivé aussitôt que possible. Suivre toutes les instructions données. Plus d\'information à propos des tests d\'arrivé disponible sur COVID-19. Voyage, tests et frontières.</string>
-    <string name="travellers_selected_for_testing_must_complete_their_arrival_test_as_soon_as_possible_follow_any_other_instructions_provided_more_information_on_arrival_testing_is_available_at_covid_19_travel_testing_and_borders">L</string>
     <string name="your_flight_into_canada">Votre vol d\'entrer au Canada</string>
     <string name="enter_the_details_of_your_planned_arrival_to_canada">Entrer les détails de votre arrivée planifié au Canada</string>
     <string name="within_the_next_72_hours_3_days">dans les prochains 72 heures (3 jours)</string>
