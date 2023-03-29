@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ArriveCan</string>
-    <string name="sign_in_to_arrivecan">Sign in to ArriveCan</string>
-    <string name="email_address">Email Address</string>
-    <string name="password">Password</string>
-    <string name="sign_in">SIGN IN</string>
-    <string name="forgot_password">Forgot Password?</string>
-    <string name="don_t_have_an_account">Don\'t have an account?</string>
-    <string name="create_account">Create account</string>
-    <string name="start">Start</string>
-    <string name="get_started_on_your_arrivecan_form">Get started on your ArriveCAN form</string>
-    <string name="what_best_describe_you_or_your_primary_reason_for_entering_canada">What best describe you or your primary reason for entering Canada?</string>
-    <string name="if_you_include_other_workers_in_your_declaration_they_must_have_the_same_reason_for_entry">If you include other workers in your declaration, they must have the same reason for entry.</string>
-    <string name="canadian_citizen_or_permanent_resident">Canadian citizen or permanent resident</string>
-    <string name="essential_reasons_related_to_work_or_school">Essential reasons related to work or school</string>
-    <string name="discretionary_travel_for_tourism_leisure_and_recreation">Discretionary travel (for tourism, leisure, and recreation)</string>
-    <string name="international_student_with_a_valid_visa">International student with a valid visa</string>
+    <string name="sign_in_to_arrivecan">Connectez-vous à ArriveCan</string>
+    <string name="email_address">Addresse courriel</string>
+    <string name="password">Mot de passe</string>
+    <string name="sign_in">CONNECTION</string>
+    <string name="forgot_password">Mot de passe oublié?</string>
+    <string name="don_t_have_an_account">Pas de compte?</string>
+    <string name="create_account">Créer un compte</string>
+    <string name="start">Commencer</string>
+    <string name="get_started_on_your_arrivecan_form">Commencez votre formulaire ArriveCAN</string>
+    <string name="what_best_describe_you_or_your_primary_reason_for_entering_canada">Qu\'est ce qui décrit le mieux votre raison d\'entrer au Canada</string>
+    <string name="canadian_citizen_or_permanent_resident">Citoyen(ne) canadien(ne) ou Résident(e) permanent(e)</string>
     <string name="compassionate_entry_e_g_taking_care_of_a_sick_family_member_providing_end_of_life_support_or_attending_a_funeral">Compassionate entry (e.g. taking care of a sick family member, providing end-of-life support, or attending a funeral).</string>
     <string name="family_reunification_to_reunite_with_an_immediate_or_extended_family_member">Family reunification (to reunite with an immediate or extended family member).</string>
     <string name="other_reasons_not_described_in_the_above_options">Other reasons not described in the above options.</string>
@@ -42,4 +38,8 @@
     <string name="date_of_arrival">Date of Arrival</string>
     <string name="what_s_your_email_address">What\'s your email address?</string>
     <string name="already_have_an_account">Already have an account?</string>
+    <string name="if_you_include_other_workers_in_your_declaration_they_must_have_the_same_reason_for_entry">Si vous ajoutez d\'autres travailleurs à votre déclaration, ils doivent avoir la même raison d\'entrer que vous</string>
+    <string name="essential_reasons_related_to_work_or_school">Raisons essentielles reliées au travail ou aux études</string>
+    <string name="discretionary_travel_for_tourism_leisure_and_recreation">Voyage récréatif (tourisme, loisir)</string>
+    <string name="international_student_with_a_valid_visa">Étudiant international possédant un visa valid</string>
 </resources>
