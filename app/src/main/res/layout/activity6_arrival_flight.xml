@@ -189,7 +189,7 @@
 
         <!-- Date of Arrival-->
         <TextView
-            android:id="@+id/asterix5"
+            android:id="@+id/asterix6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="* "
@@ -227,74 +227,6 @@
             </LinearLayout>
 
         </com.google.android.material.textfield.TextInputLayout>
-
-        <!-- Departure Date and Time -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Departure Date and Time"
-            android:textSize="16sp" />
-
-        <EditText
-            android:id="@+id/et_departure_date_time"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="datetime"
-            android:background="@drawable/edit_text_bg"
-            android:padding="16dp"
-            android:textSize="16sp" />
-
-        <!-- Departure Airport -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Departure Airport"
-            android:textSize="16sp" />
-
-        <EditText
-            android:id="@+id/et_departure_airport"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:background="@drawable/edit_text_bg"
-            android:padding="16dp"
-            android:textSize="16sp" />
-
-        <!-- Arrival Date and Time -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Arrival Date and Time"
-            android:textSize="16sp" />
-
-        <EditText
-            android:id="@+id/et_arrival_date_time"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="datetime"
-            android:background="@drawable/edit_text_bg"
-            android:padding="16dp"
-            android:textSize="16sp" />
-
-        <!-- Arrival Airport -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Arrival Airport"
-            android:textSize="16sp" />
-
-        <EditText
-            android:id="@+id/et_arrival_airport"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:background="@drawable/edit_text_bg"
-            android:padding="16dp"
-            android:textSize="16sp" />
 
     </LinearLayout>
 
