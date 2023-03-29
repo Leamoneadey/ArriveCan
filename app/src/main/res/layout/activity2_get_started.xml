@@ -7,19 +7,29 @@
     tools:context=".GetStarted">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_Start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="clickEnter"
         android:text="Start"
         tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="410dp" />
+        tools:layout_editor_absoluteY="341dp" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView_start"
         android:layout_width="487dp"
         android:layout_height="38dp"
         android:text="Get started on your ArriveCAN form"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="372dp" />
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="282dp" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Add traveller"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="625dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
