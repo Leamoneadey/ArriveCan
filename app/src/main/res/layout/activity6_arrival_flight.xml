@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -45,18 +45,18 @@
 
         <!-- Link textview -->
 
+        <!-- Required textview -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:onClick="onAirportsLinkClicked"
             android:text="See the list of airports"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
             android:textColor="#5c5b58"
-            android:textColorLink="#0000FF"
-            android:autoLink="web"
-            android:linksClickable="true"
-            android:onClick="onAirportsLinkClicked"/>
+            android:textColorLink="#0000FF" />
 
-        <!-- Required textview -->
         <TextView
             android:id="@+id/asterix1"
             android:layout_width="wrap_content"
@@ -204,29 +204,29 @@
             android:textColor="#5c5b58"/>
 
         <!-- TextInputLayout with EditText -->
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/date_input"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/date_input"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
 
-                <DatePicker
-                    android:id="@+id/date_picker"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+<!--                <DatePicker-->
+<!--                    android:id="@+id/date_picker"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"/>-->
 
-                <TimePicker
-                    android:id="@+id/time_picker"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+<!--                <TimePicker-->
+<!--                    android:id="@+id/time_picker"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"/>-->
 
-            </LinearLayout>
+<!--            </LinearLayout>-->
 
-        </com.google.android.material.textfield.TextInputLayout>
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
 
     </LinearLayout>
 

@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:onClick="clickEnter"
         android:text="Start"
+        android:backgroundTint="#2d79a4"
         tools:layout_editor_absoluteX="161dp"
         tools:layout_editor_absoluteY="341dp" />
 
@@ -25,11 +26,15 @@
 
     <Button
         android:id="@+id/button_add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/black"
-        android:text="Add traveller"
+        android:layout_width="63dp"
+        android:layout_height="60dp"
+        android:background="@drawable/shape_start"
+        android:text="+"
+        android:backgroundTint="#2d79a4"
+        android:textStyle="bold"
+        android:textColor="#fff"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="625dp" />
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="403dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
