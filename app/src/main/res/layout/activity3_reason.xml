@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="What best describe you or your primary reason for entering Canada?"
+            android:text="@string/what_best_describe_you_or_your_primary_reason_for_entering_canada"
             android:textColor="#103C51"
             android:textStyle="bold"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
@@ -30,7 +30,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="If you include other workers in your declaration, they must have the same reason for entry."
+            android:text="@string/if_you_include_other_workers_in_your_declaration_they_must_have_the_same_reason_for_entry"
             android:textColor="#808080"
             android:paddingTop="7dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
@@ -48,44 +48,44 @@
                 android:id="@+id/option_canadian_citizen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Canadian citizen or permanent resident"/>
+                android:text="@string/canadian_citizen_or_permanent_resident"/>
 
             <RadioButton
                 android:id="@+id/option_essential_reasons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Essential reasons related to work or school"/>
+                android:text="@string/essential_reasons_related_to_work_or_school"/>
 
             <RadioButton
                 android:id="@+id/option_discretionary_travel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Discretionary travel (for tourism, leisure, and recreation)"/>
+                android:text="@string/discretionary_travel_for_tourism_leisure_and_recreation"/>
 
             <RadioButton
                 android:id="@+id/option_international_students"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="International student with a valid visa"/>
+                android:text="@string/international_student_with_a_valid_visa"/>
 
             <RadioButton
                 android:id="@+id/option_compassionate_entry"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Compassionate entry (e.g. taking care of a sick family member, providing end-of-life support, or attending a funeral)."
+                android:text="@string/compassionate_entry_e_g_taking_care_of_a_sick_family_member_providing_end_of_life_support_or_attending_a_funeral"
                 />
 
             <RadioButton
                 android:id="@+id/option_family_reunification"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Family reunification (to reunite with an immediate or extended family member)."/>
+                android:text="@string/family_reunification_to_reunite_with_an_immediate_or_extended_family_member"/>
 
             <RadioButton
                 android:id="@+id/option_other_reasons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Other reasons not described in the above options."
+                android:text="@string/other_reasons_not_described_in_the_above_options"
                 />
 
         </RadioGroup>
@@ -107,7 +107,7 @@
             android:layout_marginTop="32dp"
             android:backgroundTint="#2d79a4"
             android:onClick="clickEnter"
-            android:text="Next"
+            android:text="@string/next"
             android:textColor="@color/white" />
     </LinearLayout>
 

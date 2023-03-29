@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="How are you entering into Canada?"
+        android:text="@string/how_are_you_entering_into_canada"
         android:textColor="@color/black"
         android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:textAlignment="textStart"
-        android:text="Select from one the following:"/>
+        android:text="@string/select_from_one_the_following"/>
 
     <RadioGroup
         android:id="@+id/entry_mode_radiogroup"
@@ -39,7 +39,7 @@
             android:id="@+id/entry_by_air_radiobutton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Entry By Air"
+            android:text="@string/entry_by_air"
             android:textAlignment="center"
             android:drawableLeft="@drawable/avion"
             android:layout_marginTop="20dp"/>
@@ -48,7 +48,7 @@
             android:id="@+id/entry_by_land_radiobutton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Entry By Land"
+            android:text="@string/entry_by_land"
             android:textAlignment="center"
             android:drawableLeft="@drawable/land"
             android:layout_marginTop="20dp" />
@@ -57,7 +57,7 @@
             android:id="@+id/entry_by_marine_radiobutton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Entry By Marine"
+            android:text="@string/entry_by_marine"
             android:textAlignment="center"
             android:drawableLeft="@drawable/boat"
             android:layout_marginTop="20dp" />

@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Air travellers, please note the following:"
+            android:text="@string/air_travellers_please_note_the_following"
             android:textColor="#103C51"
             android:textStyle="bold"
             android:textSize="28sp"
@@ -30,7 +30,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="On arrival to Canada, you may be required to take a COVID-19 test. You are asked to register in advance for your COVID-19 test. Preregistration will speed up your testing experience."
+            android:text="@string/on_arrival_to_canada_you_may_be_required_to_take_a_covid_19_test_you_are_asked_to_register_in_advance_for_your_covid_19_test_preregistration_will_speed_up_your_testing_experience"
             android:textColor="#5c5b58"
             android:paddingTop="10dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
@@ -38,7 +38,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Travellers selected for testing must complete their arrival test as soon as possible. Follow any other instructions provided. More information on arrival testing is available at COVID-19: Travel, testing and borders."
+            android:text="@string/travellers_selected_for_testing_must_complete_their_arrival_test_as_soon_as_possible_follow_any_other_instructions_provided_more_information_on_arrival_testing_is_available_at_covid_19_travel_testing_and_borders"
             android:textColor="#5c5b58"
             android:paddingTop="10dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />

@@ -15,7 +15,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Your Flight Into Canada"
+            android:text="@string/your_flight_into_canada"
             android:textSize="24sp"
             android:textStyle="bold"
             android:textColor="#103C51"/>
@@ -26,12 +26,12 @@
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
             android:textColor="#5c5b58"
-            android:text="Enter the details of your planned arrival to Canada " />
+            android:text="@string/enter_the_details_of_your_planned_arrival_to_canada" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="within the next 72 hours (3 days)."
+            android:text="@string/within_the_next_72_hours_3_days"
             android:textStyle="bold"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
             android:textColor="#5c5b58" />
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
             android:textColor="#5c5b58"
-            android:text=" If your trip is not within the next 72 hours, come back and complete your submission later." />
+            android:text="@string/if_your_trip_is_not_within_the_next_72_hours_come_back_and_complete_your_submission_later" />
 
         <!-- Link textview -->
 
@@ -52,7 +52,7 @@
             android:autoLink="web"
             android:linksClickable="true"
             android:onClick="onAirportsLinkClicked"
-            android:text="See the list of airports"
+            android:text="@string/see_the_list_of_airports"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
             android:textColor="#5c5b58"
             android:textColorLink="#0000FF" />
@@ -67,7 +67,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="indicates a required field"
+            android:text="@string/indicates_a_required_field"
             android:textAppearance="@style/TextAppearance.AppCompat.Caption"
             android:textColor="#5c5b58"/>
 
@@ -82,7 +82,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Country of original departure"
+            android:text="@string/country_of_original_departure"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
             android:textStyle="bold"
             android:textColor="#5c5b58"/>
@@ -90,7 +90,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="This is the last country you stayed inor visited prior to your flight to Canada"
+            android:text="@string/this_is_the_last_country_you_stayed_inor_visited_prior_to_your_flight_to_canada"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
             android:layout_marginTop="24dp"/>
 
@@ -117,7 +117,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Arrival airport"
+            android:text="@string/arrival_airport"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
             android:textStyle="bold"
             android:textColor="#5c5b58"/>
@@ -144,7 +144,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Airline"
+            android:text="@string/airline"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
             android:textStyle="bold"
             android:textColor="#5c5b58"/>
@@ -171,7 +171,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Flight number"
+            android:text="@string/flight_number"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
             android:textStyle="bold"
             android:textColor="#5c5b58"/>
@@ -198,7 +198,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Date of Arrival"
+            android:text="@string/date_of_arrival"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
             android:textStyle="bold"
             android:textColor="#5c5b58"/>
