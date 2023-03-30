@@ -146,6 +146,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:spinnerMode="dropdown"
+                android:entries="@array/documentList"
                 android:verticalScrollbarPosition="defaultPosition" />
 
         </com.google.android.material.textfield.TextInputLayout>
