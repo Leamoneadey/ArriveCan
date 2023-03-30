@@ -42,4 +42,11 @@
     <string name="flight_number">Numéro du vol</string>
     <string name="what_s_your_email_address">Quelle est vote adresse courriel?</string>
     <string name="already_have_an_account">Déjà un compte?</string>
+
+    <string-array name="documentList">
+        <item>Passeport</item>
+        <item>Carte NEXUS</item>
+        <item>Carte de résident permanent</item>
+        <item>Acte de naissance</item>
+    </string-array>
 </resources>

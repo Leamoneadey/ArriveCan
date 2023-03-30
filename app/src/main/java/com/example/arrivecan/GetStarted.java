@@ -13,7 +13,7 @@ public class GetStarted extends AppCompatActivity {
         setContentView(R.layout.activity2_get_started);
     }
 
-    public <View> void clickEnter(View view){
+    public <View> void btnStart(View view){
         startActivity(new Intent(getApplicationContext(), Reason.class));
     }
 

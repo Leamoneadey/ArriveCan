@@ -1,7 +1,5 @@
 package com.example.arrivecan;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,8 +9,11 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class TransportActivity extends AppCompatActivity {
 
+    //Nommer les variables
     private TextView transportTextView, selectEntryModeTextView;
     private RadioGroup entryModeRadioGroup;
     private RadioButton entryByAirRadioButton, entryByLandRadioButton, entryByMarineRadioButton;
@@ -23,6 +24,7 @@ public class TransportActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity4_transport);
 
+        //Définir les variables
         transportTextView = findViewById(R.id.transport);
         selectEntryModeTextView = findViewById(R.id.select_entry_mode_textview);
         entryModeRadioGroup = findViewById(R.id.entry_mode_radiogroup);
@@ -37,29 +39,29 @@ public class TransportActivity extends AppCompatActivity {
                 int selectedId = entryModeRadioGroup.getCheckedRadioButtonId();
 
                 if (selectedId == entryByAirRadioButton.getId()) {
-                    // Handle entry by air
+                    // entry by air
                     transportTextView.setText("Entry by air selected");
                     selectEntryModeTextView.setVisibility(View.GONE);
                     entryModeRadioGroup.setVisibility(View.GONE);
                 } else if (selectedId == entryByLandRadioButton.getId()) {
-                    // Handle entry by land
+                    // entry by land
                     transportTextView.setText("Entry by land selected");
                     selectEntryModeTextView.setVisibility(View.GONE);
                     entryModeRadioGroup.setVisibility(View.GONE);
                 } else if (selectedId == entryByMarineRadioButton.getId()) {
-                    // Handle entry by marine
+                    // entry by marine
                     transportTextView.setText("Entry by marine selected");
                     selectEntryModeTextView.setVisibility(View.GONE);
                     entryModeRadioGroup.setVisibility(View.GONE);
                 } else {
-                    // No option selected
+                    // Aucune option selectionné
                     Toast.makeText(TransportActivity.this, "Please select an entry mode", Toast.LENGTH_SHORT).show();
                 }
             }
         });
     }
 
-    public void clickEnter(View view){
+    public void btnTransport(View view){
         startActivity(new Intent(getApplicationContext(),CovidTest_Arrival.class));
     }
 }

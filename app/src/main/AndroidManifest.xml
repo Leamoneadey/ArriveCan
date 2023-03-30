@@ -12,7 +12,14 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.ArriveCan"
-        tools:targetApi="31">
+        tools:targetApi="33">
+        <activity
+            android:name=".Contact_Info"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".GetStarted"
             android:exported="false">

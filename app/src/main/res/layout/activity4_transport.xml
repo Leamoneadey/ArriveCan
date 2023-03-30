@@ -71,7 +71,7 @@
         android:layout_gravity="end"
         android:layout_margin="16dp"
         android:backgroundTint="#2d79a4"
-        android:onClick="clickEnter"
+        android:onClick="btnTransport"
         android:text="Next" />
 
 </LinearLayout>

@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context=".Arrival_Flight">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:paddingBottom="16dp"
+        android:paddingTop="5dp">
 
         <!-- Title -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/your_flight_into_canada"
-            android:textSize="24sp"
+            android:text="Your Flight into Canada"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:paddingBottom="8dp"
             android:textStyle="bold"
             android:textColor="#103C51"/>
 
@@ -26,101 +33,126 @@
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
             android:textColor="#5c5b58"
-            android:text="@string/enter_the_details_of_your_planned_arrival_to_canada" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/within_the_next_72_hours_3_days"
-            android:textStyle="bold"
-            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-            android:textColor="#5c5b58" />
+            android:paddingTop="5dp"
+            android:text="Enter the details of your planned arrival to Canada within the next 72 hours (3 days)." />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
             android:textColor="#5c5b58"
-            android:text="@string/if_your_trip_is_not_within_the_next_72_hours_come_back_and_complete_your_submission_later" />
+            android:paddingTop="5dp"
+            android:text="If your trip is not within the next 72 hours, come back and complete your submission later." />
 
         <!-- Link textview -->
 
-        <!-- Required textview -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autoLink="web"
             android:linksClickable="true"
             android:onClick="onAirportsLinkClicked"
-            android:text="@string/see_the_list_of_airports"
-            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-            android:textColor="#5c5b58"
+            android:paddingTop="5dp"
+            android:text="Click here to see the list of airports."
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#103C51"
             android:textColorLink="#0000FF" />
 
-        <TextView
-            android:id="@+id/asterix1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="* "
-            android:textColor="#FF0000" />
-
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/indicates_a_required_field"
-            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-            android:textColor="#5c5b58"/>
+            android:orientation="horizontal">
+
+            <!-- Required textview -->
+            <TextView
+                android:id="@+id/asterix1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* "
+                android:textColor="#FF0000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="indicates a required field"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="#5c5b58"
+                android:paddingTop="20dp"/>
+
+        </LinearLayout>
 
         <!-- pays d'origine textview -->
-        <TextView
-            android:id="@+id/asterix2"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="* "
-            android:textColor="#FF0000" />
+            android:orientation="horizontal"
+            android:paddingTop="2dp">
+
+            <!-- Required textview -->
+            <TextView
+                android:id="@+id/asterix2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* "
+                android:textColor="#FF0000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="Country of original departure"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/country_of_original_departure"
-            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-            android:textStyle="bold"
-            android:textColor="#5c5b58"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/this_is_the_last_country_you_stayed_inor_visited_prior_to_your_flight_to_canada"
-            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-            android:layout_marginTop="24dp"/>
+            android:text="This is the last country you stayed in or visited prior to your flight to Canada."
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:paddingTop="3dp"
+            android:paddingBottom="2dp"
+            android:layout_marginLeft="2dp"/>
 
         <!-- TextInputLayout with EditText -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Country name">
+            android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:height="45dp"
+                android:background="@drawable/border" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Arrival airport -->
-        <TextView
-            android:id="@+id/asterix3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="* "
-            android:textColor="#FF0000" />
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/arrival_airport"
-            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-            android:textStyle="bold"
-            android:textColor="#5c5b58"/>
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/asterix3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* "
+                android:textColor="#FF0000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Arrival airport"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
 
         <!-- TextInputLayout with EditText -->
         <com.google.android.material.textfield.TextInputLayout
@@ -129,25 +161,35 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:height="45dp"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Airline-->
-        <TextView
-            android:id="@+id/asterix4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="* "
-            android:textColor="#FF0000" />
-
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/airline"
-            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-            android:textStyle="bold"
-            android:textColor="#5c5b58"/>
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/asterix4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* "
+                android:textColor="#FF0000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Airline"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
 
         <!-- TextInputLayout with EditText -->
         <com.google.android.material.textfield.TextInputLayout
@@ -156,25 +198,35 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:height="45dp"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Flight number-->
-        <TextView
-            android:id="@+id/asterix5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="* "
-            android:textColor="#FF0000" />
-
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/flight_number"
-            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-            android:textStyle="bold"
-            android:textColor="#5c5b58"/>
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/asterix5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* "
+                android:textColor="#FF0000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Flight number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+        </LinearLayout>
 
         <!-- TextInputLayout with EditText -->
         <com.google.android.material.textfield.TextInputLayout
@@ -183,50 +235,66 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:height="45dp"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Date of Arrival-->
-        <TextView
-            android:id="@+id/asterix6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="* "
-            android:textColor="#FF0000" />
-
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/date_of_arrival"
-            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-            android:textStyle="bold"
-            android:textColor="#5c5b58"/>
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/asterix6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* "
+                android:textColor="#FF0000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date of Arrival"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
 
         <!-- TextInputLayout with EditText -->
-<!--        <com.google.android.material.textfield.TextInputLayout-->
-<!--            android:id="@+id/date_input"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content">-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/arrival_date_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:endIconDrawable="@drawable/calendar2"
+            app:endIconMode="custom"
+            app:endIconTint="@color/black">
 
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:orientation="horizontal">-->
+            <EditText
+                android:id="@+id/arrival_date_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:inputType="none"
+                android:focusable="false"/>
 
-<!--                <DatePicker-->
-<!--                    android:id="@+id/date_picker"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"/>-->
+        </com.google.android.material.textfield.TextInputLayout>
 
-<!--                <TimePicker-->
-<!--                    android:id="@+id/time_picker"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"/>-->
-
-<!--            </LinearLayout>-->
-
-<!--        </com.google.android.material.textfield.TextInputLayout>-->
+        <!-- Next Button -->
+        <Button
+            android:id="@+id/continue_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#2d79a4"
+            android:onClick="btnArrival"
+            android:text="Next"
+            android:textColor="@color/white" />
 
     </LinearLayout>
 

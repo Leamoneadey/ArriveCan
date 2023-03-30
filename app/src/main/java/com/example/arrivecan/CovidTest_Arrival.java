@@ -13,7 +13,7 @@ public class CovidTest_Arrival extends AppCompatActivity {
         setContentView(R.layout.activity5_covid_test_arrival);
     }
 
-    public <View> void clickEnter(View view) {
-        startActivity(new Intent(getApplicationContext(), CreateAccount.class));
+    public <View> void btnCovid(View view) {
+        startActivity(new Intent(getApplicationContext(), Arrival_Flight.class));
     }
 }

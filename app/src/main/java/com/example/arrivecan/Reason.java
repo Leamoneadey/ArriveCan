@@ -13,7 +13,7 @@ public class Reason extends AppCompatActivity {
         setContentView(R.layout.activity3_reason);
     }
 
-    public <View> void clickEnter(View view) {
+    public <View> void btnReason(View view) {
         startActivity(new Intent(getApplicationContext(), TransportActivity.class));
     }
 }

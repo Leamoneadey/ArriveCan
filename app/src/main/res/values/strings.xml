@@ -41,4 +41,11 @@
     <string name="date_of_arrival">Date of Arrival</string>
     <string name="what_s_your_email_address">What\'s your email address?</string>
     <string name="already_have_an_account">Already have an account?</string>
+
+    <string-array name="documentList">
+        <item>Passport</item>
+        <item>NEXUS card</item>
+        <item>Permanent Resident card</item>
+        <item>Birth certificate</item>
+    </string-array>
 </resources>
