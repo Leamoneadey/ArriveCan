@@ -42,6 +42,9 @@
     <string name="flight_number">Numéro du vol</string>
     <string name="what_s_your_email_address">Quelle est vote adresse courriel?</string>
     <string name="already_have_an_account">Déjà un compte?</string>
+    <string name="enter_the_details_of_your_planned_arrival_to_canada_within_the_next_72_hours_3_days">Enter the details of your planned arrival to Canada within the next 72 hours (3 days).</string>
+    <string name="click_here_to_see_the_list_of_airports">Click here to see the list of airports.</string>
+    <string name="this_is_the_last_country_you_stayed_in_or_visited_prior_to_your_flight_to_canada">This is the last country you stayed in or visited prior to your flight to Canada.</string>
 
     <string-array name="documentList">
         <item>Passeport</item>

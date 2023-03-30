@@ -34,7 +34,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
             android:textColor="#5c5b58"
             android:paddingTop="5dp"
-            android:text="Enter the details of your planned arrival to Canada within the next 72 hours (3 days)." />
+            android:text="@string/enter_the_details_of_your_planned_arrival_to_canada_within_the_next_72_hours_3_days" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -53,7 +53,7 @@
             android:linksClickable="true"
             android:onClick="onAirportsLinkClicked"
             android:paddingTop="5dp"
-            android:text="Click here to see the list of airports."
+            android:text="@string/click_here_to_see_the_list_of_airports"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
             android:textColor="#103C51"
             android:textColorLink="#0000FF" />
@@ -110,7 +110,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="This is the last country you stayed in or visited prior to your flight to Canada."
+            android:text="@string/this_is_the_last_country_you_stayed_in_or_visited_prior_to_your_flight_to_canada"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
             android:paddingTop="3dp"
             android:paddingBottom="2dp"
