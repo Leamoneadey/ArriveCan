@@ -44,6 +44,23 @@
     <string name="enter_the_details_of_your_planned_arrival_to_canada_within_the_next_72_hours_3_days">Enter the details of your planned arrival to Canada within the next 72 hours (3 days).</string>
     <string name="click_here_to_see_the_list_of_airports">Click here to see the list of airports.</string>
     <string name="this_is_the_last_country_you_stayed_in_or_visited_prior_to_your_flight_to_canada">This is the last country you stayed in or visited prior to your flight to Canada.</string>
+    <string name="traveller_details">Traveller Details</string>
+    <string name="add_your_details_here_if_you_are_travelling_as_part_of_a_family_or_group_you_can_multiple_travellers_after">Add your details here. If you are travelling as part of a family or group, you can multiple travellers after.</string>
+    <string name="surname">Surname</string>
+    <string name="given_name">Given Name</string>
+    <string name="initial_middle_name_optional">Initial/Middle Name (Optional)</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="travel_document">Travel Document</string>
+    <string name="select_the_document_type">Select the document type:</string>
+    <string name="document_type">Document Type</string>
+    <string name="country_of_issue">Country of Issue</string>
+    <string name="document_number">Document Number</string>
+    <string name="proof_of_vaccination">Proof of Vaccination</string>
+    <string name="will_you_provide_proof_that_your_are_fully_vaccinated_against_covid_19">Will you provide proof that your are fully vaccinated against COVID-19?</string>
+    <string name="example">Example</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="are_you_unable_to_receive_a_vaccine_for_medical_reasons">Are you unable to receive a vaccine for medical reasons?</string>
 
     <string-array name="documentList">
         <item>Passport</item>
