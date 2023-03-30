@@ -41,14 +41,44 @@
     <string name="date_of_arrival">Date of Arrival</string>
     <string name="what_s_your_email_address">What\'s your email address?</string>
     <string name="already_have_an_account">Already have an account?</string>
-    <string name="enter_the_details_of_your_planned_arrival_to_canada_within_the_next_72_hours_3_days">Enter the details of your planned arrival to Canada within the next 72 hours (3 days).</string>
-    <string name="click_here_to_see_the_list_of_airports">Click here to see the list of airports.</string>
-    <string name="this_is_the_last_country_you_stayed_in_or_visited_prior_to_your_flight_to_canada">This is the last country you stayed in or visited prior to your flight to Canada.</string>
 
     <string-array name="documentList">
         <item>Passport</item>
         <item>NEXUS card</item>
         <item>Permanent Resident card</item>
         <item>Birth certificate</item>
+    </string-array>
+
+    <string-array name="nombre_dose">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="vaccine_list">
+        <item>Pfizer-BioNTech</item>
+        <item>Moderna</item>
+        <item>AstraZeneca</item>
+        <item>Johnson &amp; Johnson</item>
+        <item>Novavax</item>
+        <item>Sinovac</item>
+    </string-array>
+
+    <string-array name="country_list">
+        <item>Canada</item>
+        <item>United States</item>
+        <item>Mexico</item>
+        <item>France</item>
+        <item>Germany</item>
+        <item>Japan</item>
+        <item>United-Kingdom</item>
+        <item>Brazil</item>
+        <item>India</item>
+        <item>China</item>
+        <item>Russia</item>
+        <item>Australia</item>
+        <item>Spain</item>
+        <item>Italy</item>
+        <item>South Korea</item>
     </string-array>
 </resources>

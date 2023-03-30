@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context=".Vaccine_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingTop="5dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vaccine Details"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:paddingBottom="8dp"
+            android:textStyle="bold"
+            android:textColor="#103C51"/>
+
+        <!-- Ask if person has been vaccinated -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="#5c5b58"
+            android:paddingTop="5dp"
+            android:text="Have you been vaccinated?" />
+
+        <RadioGroup
+            android:id="@+id/vaccination_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/yes_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/no_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <!-- If Yes, ask how many doses -->
+        <TextView
+            android:id="@+id/dose_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="How many doses have you received? (Up to 3)"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="#5c5b58"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/border">
+
+            <Spinner
+                android:id="@+id/dose_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:spinnerMode="dropdown"
+                android:entries="@array/nombre_dose"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- dose 1 details -->
+        <LinearLayout
+            android:id="@+id/dose_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dose 1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp"/>
+
+            <!-- DOSE 1: Vaccin name -->
+            <TextView
+                android:id="@+id/vaccin_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Vaccine Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="#5c5b58"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/border"
+                android:autofillHints="Vaccine Name">
+
+                <Spinner
+                    android:id="@+id/vaccin1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/vaccine_list"
+                    android:verticalScrollbarPosition="defaultPosition" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- DOSE 1: date de vaccination -->
+            <TextView
+                android:id="@+id/vaccin_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Vaccine Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="#5c5b58"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/vd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/border"
+                android:hint="Date of Vaccination"
+                app:endIconDrawable="@drawable/calendar2"
+                app:endIconMode="custom"
+                app:endIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/vdc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border"
+                    android:focusable="false"
+                    android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- DOSE 1: Country-->
+            <TextView
+                android:id="@+id/title_pays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Select the country of vaccination:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="#5c5b58"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="6dp"
+                android:hint="Country of Vaccination"
+                android:textColorHint="@color/black"
+                android:background="@drawable/border">
+
+                <Spinner
+                    android:id="@+id/pays_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/country_list"
+                    android:verticalScrollbarPosition="defaultPosition" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <!-- dose 2 details -->
+        <LinearLayout
+            android:id="@+id/dose_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dose 2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp"/>
+
+            <!-- DOSE 2: Vaccin name -->
+            <TextView
+                android:id="@+id/vaccin_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Vaccine Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="#5c5b58"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/border"
+                android:autofillHints="Vaccine Name">
+
+                <Spinner
+                    android:id="@+id/vaccin2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/vaccine_list"
+                    android:verticalScrollbarPosition="defaultPosition" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- DOSE 2: date de vaccination -->
+            <TextView
+                android:id="@+id/vaccin_date2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Vaccine Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="#5c5b58"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/vd2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/border"
+                android:hint="Date of Vaccination"
+                app:endIconDrawable="@drawable/calendar2"
+                app:endIconMode="custom"
+                app:endIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/vdc2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border"
+                    android:focusable="false"
+                    android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- DOSE 2: Country-->
+            <TextView
+                android:id="@+id/title_pays2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Select the country of vaccination:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="#5c5b58"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="6dp"
+                android:hint="Country of Vaccination"
+                android:textColorHint="@color/black"
+                android:background="@drawable/border">
+
+                <Spinner
+                    android:id="@+id/pays_spinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/country_list"
+                    android:verticalScrollbarPosition="defaultPosition" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <!-- dose 3 details -->
+        <LinearLayout
+            android:id="@+id/dose_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dose 3"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp"/>
+
+            <!-- DOSE 2: Vaccin name -->
+            <TextView
+                android:id="@+id/vaccin_title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Vaccine Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="#5c5b58"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/border"
+                android:autofillHints="Vaccine Name">
+
+                <Spinner
+                    android:id="@+id/vaccin3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/vaccine_list"
+                    android:verticalScrollbarPosition="defaultPosition" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- DOSE 3: date de vaccination -->
+            <TextView
+                android:id="@+id/vaccin_date3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Vaccine Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="#5c5b58"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/vd3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/border"
+                android:hint="Date of Vaccination"
+                app:endIconDrawable="@drawable/calendar2"
+                app:endIconMode="custom"
+                app:endIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/vdc3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border"
+                    android:focusable="false"
+                    android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- DOSE 2: Country-->
+            <TextView
+                android:id="@+id/title_pays3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Select the country of vaccination:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="#5c5b58"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="6dp"
+                android:hint="Country of Vaccination"
+                android:textColorHint="@color/black"
+                android:background="@drawable/border">
+
+                <Spinner
+                    android:id="@+id/pays_spinner3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/country_list"
+                    android:verticalScrollbarPosition="defaultPosition" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <!-- If No, continue-->
+        <Button
+            android:id="@+id/continue_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="170dp"
+            android:backgroundTint="#2d79a4"
+            android:onClick="btnCovid2"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+</ScrollView>
