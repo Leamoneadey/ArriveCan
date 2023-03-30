@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Proof of Vaccination"
+        android:text="@string/proof_of_vaccination"
         android:padding="16dp"
         android:background="#103C51"
         android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
@@ -21,7 +21,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Will you provide proof that your are fully vaccinated against COVID-19?"
+        android:text="@string/will_you_provide_proof_that_your_are_fully_vaccinated_against_covid_19"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="19sp"
         android:padding="16dp"/>
@@ -48,7 +48,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
-                android:text=" Example"
+                android:text="@string/example"
                 android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
                 android:textColor="@color/black" />
 
@@ -62,7 +62,7 @@
                 android:layout_toStartOf="@id/no_button"
                 android:backgroundTint="#43A047"
                 android:onClick="btnYes1"
-                android:text="Yes"
+                android:text="@string/yes"
                 android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button"
                 android:textColor="@color/white"
                 app:cornerRadius="15dp" />
@@ -77,7 +77,7 @@
                 android:layout_marginEnd="8dp"
                 android:backgroundTint="#FF2000"
                 android:onClick="btnNo1"
-                android:text="No"
+                android:text="@string/no"
                 android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button"
                 android:textColor="@color/white"
                 app:cornerRadius="15dp"/>
@@ -93,7 +93,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="Are you unable to receive a vaccine for medical reasons?"
+        android:text="@string/are_you_unable_to_receive_a_vaccine_for_medical_reasons"
         android:textSize="18sp"
         android:visibility="visible" />
 

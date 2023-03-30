@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="8dp"
-            android:text="Traveller Details"
+            android:text="@string/traveller_details"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
             android:textColor="#103C51"
             android:textStyle="bold" />
@@ -33,7 +33,7 @@
             android:id="@+id/add_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add your details here. If you are travelling as part of a family or group, you can multiple travellers after."
+            android:text="@string/add_your_details_here_if_you_are_travelling_as_part_of_a_family_or_group_you_can_multiple_travellers_after"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
             android:textColor="#5c5b58" />
 
@@ -43,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="Surname">
+            android:hint="@string/surname">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/add_surname2"
@@ -61,7 +61,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="Given Name">
+            android:hint="@string/given_name">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/add_given_name2"
@@ -78,7 +78,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="Initial/Middle Name (Optional)">
+            android:hint="@string/initial_middle_name_optional">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/add_middle2"
@@ -96,7 +96,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="Date of Birth"
+            android:hint="@string/date_of_birth"
             app:endIconDrawable="@drawable/calendar2"
             app:endIconMode="custom"
             app:endIconTint="@color/black">
@@ -117,7 +117,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="18dp"
-            android:text="Travel Document"
+            android:text="@string/travel_document"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
             android:textColor="#103C51"
             android:textStyle="bold" />
@@ -128,7 +128,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:text="Select the document type:"
+            android:text="@string/select_the_document_type"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
             android:textColor="#5c5b58"/>
 
@@ -137,7 +137,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="6dp"
-            android:hint="Document Type"
+            android:hint="@string/document_type"
             android:textColorHint="@color/black"
             android:background="@drawable/border">
 
@@ -157,7 +157,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="Country of Issue">
+            android:hint="@string/country_of_issue">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/country2"
@@ -175,7 +175,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="Document Number">
+            android:hint="@string/document_number">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/doc_num2"
